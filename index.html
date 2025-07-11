@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calcula nota</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-black">
+        <div class="imgCentro"><img src="https://cdn.brandfetch.io/idFQIFwWLY/w/250/h/106/theme/light/logo.png?c=1bxid64Mup7aczewSAYMX&t=1746111987165" alt="UNIG Logo" /></div>
+        <div class="icons">
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram-new.png" alt="facebook-new"/>
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-new.png" alt="facebook-new"/>
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png" alt="youtube-play"/>
+        </div>
+    </nav>
+  </header>
+
+  <main class="container">
+  <form id="formNotas">
+    <div class="content">
+      <div class="CampoAd">
+        <label for="Ad">Avaliação Diagnóstica</label>
+        <input type="number" step="any" placeholder="Entre com a AI" class="Ad form-control" id="Ad" required  min="0" max="10">
+      </div>
+
+      <div class="campoAi">
+        <label for="Ai">Avaliação Integradora</label>
+        <input type="number" step="any" placeholder="Entre com a AD" class="Ai form-control" id="Ai" required min="0" max="10">
+      </div>
+    </div>
+
+    <div class="ConsultaNota">
+      <button type="submit" class="btn btn-primary">Consulta</button>
+    </div>
+  </form>
+
+  <div class="resultadoNota">
+    <div class="alinhaResultado">
+        <p class="tellResult">
+        </p>
+        <input disabled class="resultado" id="resultado">
+    </div>
+  </div>
+</main>
+
+  <footer>
+    <p>(c) 2025 UNIG</p>
+  </footer>
+
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6VKHr7W0nPEzO3oN1p6V4IoE+oGz3GkT/lkW2zYtGJgG" crossorigin="anonymous"></script>
+</body>
+</html>
